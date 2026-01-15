@@ -2,6 +2,7 @@ package com.example.fitnessApp.models;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+
 public class MonthlyGoals implements Goals {
     public  int steps ;
     public  double workOut ;

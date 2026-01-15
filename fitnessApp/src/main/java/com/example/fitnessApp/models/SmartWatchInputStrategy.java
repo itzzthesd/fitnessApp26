@@ -1,11 +1,10 @@
 package com.example.fitnessApp.models;
 
-import com.example.fitnessApp.controller.healthMetricsController;
 import com.example.fitnessApp.repositories.HealthMetricsRepo;
 
 public class SmartWatchInputStrategy implements InputStrategy{
 
-    public HealthMetricsRepo healthMetricsRepo;
+    private HealthMetricsRepo healthMetricsRepo;
 
     public SmartWatchInputStrategy(HealthMetricsRepo healthMetricsRepo){
         this.healthMetricsRepo = healthMetricsRepo;

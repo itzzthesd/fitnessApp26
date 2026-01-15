@@ -21,6 +21,7 @@ import lombok.Setter;
 )
 public class HealthMetrics {
     // this class stores the daily aggreagated metrics 
+    //public long userId;
     public  int steps ;
     public  double workOut ;
     public double caloriesIntake ;
@@ -28,5 +29,10 @@ public class HealthMetrics {
     public double weight;
     public LocalDate date;
     public User user;
+
+    
+    public long getUser(){
+        return this.user.id;
+    }
     
 }

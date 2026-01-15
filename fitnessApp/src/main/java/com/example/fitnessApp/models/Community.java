@@ -3,6 +3,7 @@ package com.example.fitnessApp.models;
 import java.util.HashMap;
 import java.util.List;
 
+
 public class Community {
     public int id;
     public String name;

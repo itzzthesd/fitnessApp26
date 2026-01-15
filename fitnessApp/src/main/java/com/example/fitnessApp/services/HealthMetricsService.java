@@ -55,13 +55,13 @@ public class HealthMetricsService {
         
         //healthMetricsRepo.upsert
         healthMetricsRepo.upsertDailyMetrics(
-            metrics.getUserId(),
-            metrics.getDate(),
-            metrics.getSteps(),
-            metrics.getWorkOut(),
-            metrics.getCaloriesIntake(),
-            metrics.getCaloriesBurn(),
-            metrics.getWeight()
+            metricsReal.getUser(),
+            metricsReal.getDate(),
+            metricsReal.getSteps(),
+            metricsReal.getWorkOut(),
+            metricsReal.getCaloriesIntake(),
+            metricsReal.getCaloriesBurn(),
+            metricsReal.getWeight()
         );
 
 
