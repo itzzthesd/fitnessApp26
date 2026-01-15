@@ -1,19 +1,32 @@
 package com.example.fitnessApp.models;
 
-import org.springframework.format.annotation.DateTimeFormat;
 
+
+import java.time.LocalDate;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+import jakarta.persistence.UniqueConstraint;
 import lombok.Getter;
 import lombok.Setter;
 
 @Getter
 @Setter
+@Entity
+@Table(
+    name = "health_metrics",
+    uniqueConstraints = {
+        @UniqueConstraint(columnNames = {"user_id", "date"})
+    }
+)
 public class HealthMetrics {
-    
+    // this class stores the daily aggreagated metrics 
     public  int steps ;
     public  double workOut ;
     public double caloriesIntake ;
     public double caloriesBurn;
     public double weight;
-    public DateTimeFormat date;
+    public LocalDate date;
     public User user;
+    
 }
